@@ -69,6 +69,13 @@
                             <th>周六</th>
                             <th>周日</th>
                         </tr>
+                        {% for w in calendar %}
+                            <tr>
+                                {% for d in w %}
+                                    <td>{{ d }}</td>
+                                {% endfor %}
+                            </tr>
+                        {% endfor %}
                     </table>
                 </div>
               </div>
